@@ -1,3 +1,19 @@
+// 5. Group Families
+
+// Napisz funkcję groupFamilies, która przyjmuje tablicę obiektów z kluczami „name” i „surname”. Funkcja zwraca obiekt z nazwiskami jako kluczami i powiązanymi z nimi nazwiskami w tablicy. Oto kilka przypadków testowych
+
+// groupFamilies([
+//     {"name": "Barack",   "surname": "Obama"},
+//     {"name": "Michelle", "surname": "Obama"}]
+// ) // { Obama: [ 'Barack', 'Michelle' ] } 
+
+// groupFamilies([
+//     {"name": "Barack",   "surname": "Obama"},
+//     {"name": "Michelle", "surname": "Obama"},
+//     {"name": "Donald",   "surname": "Trump"}]
+// ) // { Obama: [ 'Barack', 'Michelle' ], Trump: [ 'Donald' ] }
+
+
 
 module.exports = groupFamilies;
 function groupFamilies(arr) {
