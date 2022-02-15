@@ -1,6 +1,7 @@
 // 6. Count Occurences
 
-// Napisz funkcję countOccurences, która jako argument przyjmuje ciąg znaków, a zwraca obiekt. W obiekcie liczba wystąpień danego słowa powiązana jest z tablicą odpowiadających jej słów. Oto kilka przypadków testowych:
+// Napisz funkcję countOccurences, która jako argument przyjmuje ciąg znaków, a zwraca obiekt. 
+//W obiekcie liczba wystąpień danego słowa powiązana jest z tablicą odpowiadających jej słów. Oto kilka przypadków testowych:
 
 // countOccurences("hello is it you hello hello") // {
 // // '1': [ 'is', 'it', 'you' ],
@@ -34,9 +35,12 @@
       
       if (Object.keys(occurToWords).includes(numberOfOccurences.toString())) {
           occurToWords[numberOfOccurences].push(word);
+          console.log('word: '+word);
       } else {
           occurToWords[numberOfOccurences] = [];
           occurToWords[numberOfOccurences].push(word);
+          console.log('numberOfOccurences z else: '+numberOfOccurences);
+          console.log('word z else: '+word);
       }
     }
   
